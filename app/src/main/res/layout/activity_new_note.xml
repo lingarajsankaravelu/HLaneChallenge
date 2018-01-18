@@ -1,0 +1,80 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/root_layout"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/colorPrimaryDark"
+        app:subtitleTextColor="@color/colorPrimary"
+        android:background="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+      android:scrollbars="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/note_images_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title"
+        android:imeOptions="actionNext"
+        style="@style/EditTextNoteStyle"
+        />
+
+    <EditText
+        style="@style/EditTextNoteStyle"
+        android:imeOptions="actionDone"
+        android:hint="@string/note_content"
+        android:textColor="@color/colorTextDefaultLight"
+        android:maxLines="15"
+        android:id="@+id/note_content"
+        />
+
+
+  </LinearLayout>
+  </android.support.v4.widget.NestedScrollView>
+  </LinearLayout>
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/fab_add_image"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity= "bottom|end"
+      android:layout_margin="@dimen/fab_margin"
+      app:srcCompat="@drawable/ic_add_a_photo_black_24dp"
+      app:backgroundTint="@color/colorAccent"
+
+      />
+</android.support.design.widget.CoordinatorLayout>
+</layout>

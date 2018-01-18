@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">HLaneChallenge</string>
+  <string name="note_title">Title</string>
+  <string name="note_content">Enter Content</string>
+  <string name="menu_save">Save</string>
+  <string name="validation_error">Either Title or Content is empty, Note not saved</string>
+  <string name="note_saved">Note Saved</string>
+  <string name="message_common_loading">Loading</string>
+  <string name="toolbar_title">Note</string>
+  <string name="created_at">Created At</string>
+  <string name="notes">Notes</string>
+  <string name="no_data">No Notes Available. Like to create one?</string>
+</resources>

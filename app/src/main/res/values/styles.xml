@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+  <style name="HLANETEHEME" parent="HLANE.Base">  </style>
+
+    
+  <!-- Base application theme. -->
+   
+  <style name="HLANE.Base" parent="Theme.AppCompat.Light.NoActionBar"> 
+    <!-- Customize your theme here. --> 
+    <item name="colorPrimary">@color/colorPrimary</item> 
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+    <item name="android:colorControlActivated" tools:ignore="NewApi">@color/colorPrimary</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorControlActivated">@android:color/white</item>
+
+    <!--    <item name="android:colorControlActivated" tools:ignore="NewApi">@android:color/white</item>
+        <item name="android:colorControlHighlight" tools:targetApi="lollipop">@android:color/white</item> !-->
+  </style>
+
+
+  <style name="EditTextNoteStyle" parent="Base.V7.Widget.AppCompat.EditText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:padding">@dimen/padding</item>
+    <item name="android:textColor">@color/colorTextDefault</item>
+    <item name="android:cursorVisible">true</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:inputType">text</item>
+    <item name="android:layout_margin">@dimen/margin</item>
+  </style>
+
+  <style name="AuthErrorMessage">
+    <item name="android:visibility">gone</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/colorTextDefaultLight</item>
+    <item name="android:textSize">20sp</item>
+  </style>
+
+
+
+
+
+</resources>
